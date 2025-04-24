@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  tests:
+    build:
+      context: .
+      dockerfile: tests/Dockerfile
+    depends_on:
+      - db
+    links:
+      - db:db
+    ports:
+      - "1234:1234"
+    volumes:
+      - .:/ki:z
+  db:
+    image: postgres:14.2-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
