@@ -20,7 +20,7 @@ W tym projekcie zrealizowałem zadanie rekrutacyjne, które obejmuje implementac
 ### 4. Dockeryzacja:
 - W projekcie znajduje się Docker, który umożliwia uruchamianie testów integracyjnych lokalnie.
 - **Entrypoint** w Dockerze umożliwia automatyczne odświeżanie testów po każdej zmianie w kodzie.
-- Barodz lubie takie rozwiazanie przy pracy w podejściu TDD jest to bardzo wygodne, jeśli chodzi o to czemu BDD - to dlatego ze to po prostu jest świetne, im szybciej się to ma w projekcie tym lepiej bo po prostu ułatwia pisanie, czytania i przyspiesza tworzenie testów. Czyste testy z go są po prostu dramatyczne przy rosnącej aplikacji.
+- Bardzo lubie takie rozwiazanie przy pracy w podejściu TDD jest to bardzo wygodne, jeśli chodzi o to czemu BDD - to dlatego ze to po prostu jest świetne, im szybciej się to ma w projekcie tym lepiej bo po prostu ułatwia pisanie, czytania i przyspiesza tworzenie testów. Czyste testy z go są po prostu dramatyczne przy rosnącej aplikacji.
 
 ## Uruchomienie lokalne testów integracyjnych
 
@@ -83,6 +83,6 @@ W kodzie pozostawiłem kilka komentarzy, które mają charakter informacyjny. Wy
 
 ## Podsumowanie
 
-Wiem że pewnie możecie wymagać dokeryzacji która odpali wam to lokalnie, tylko po co? Nie odpala się dziś apek lokalnie z dockera gdy działami z chmurami, przygotowałem wszystko pod to żeby dało się tego użyć w konfigach do k8s (wiadomo nie ma Dockerfile dla samej binarki, i nie wrzucałem migrate command bo bym go tutaj i tak nie użył)
+Wiem że pewnie możecie wymagać dokeryzacji która odpali wam to lokalnie, tylko po co? Nie odpala się dziś apek lokalnie z dockera gdy działami z chmurami, przygotowałem wszystko pod to żeby dało się tego użyć w konfigach do k8s (wiadomo nie ma Dockerfile dla samej binarki, i nie wrzucałem migrate command bo bym go tutaj i tak nie użył) No i zostawiłem cmd do api z wbitym adresem na 0.0.0.0 a ogólnie to by szło z configu z resztą konfiguracji routera. 
 
 Mam nadzieję, że to spełnia oczekiwania, chętnie pogadam bo starałem się tak zahaczyć o rózne tematy żeby nie było strasznie sucho skoro zadanie ma być do przejrzenia i potem do porozmawiania to trakuje to raczej jako próbkę kodu :) 
